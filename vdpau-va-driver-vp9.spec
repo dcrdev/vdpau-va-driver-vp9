@@ -4,7 +4,7 @@
 
 Name:           vdpau-va-driver-vp9
 Version:        0.7.4
-Release:        0.2.%{commit_date}git%{short_commit}%{?dist}
+Release:        0.3.%{commit_date}git%{short_commit}%{?dist}
 Summary:        HW video decode support for VDPAU platforms with Chromium and VP9 Support
 License:        GPLv2+
 URL:            https://github.com/xuanruiqi/%{name}
@@ -41,10 +41,8 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/dri/*.so
 
 %changelog
-* Tue Dec 28 2021 Dominic Robinson <dominic@dcrdev.com> 0.7.4-0.2.20211012git509d3b2
-- new package built with tito
-
-* Tue Dec 28 2021 Dominic Robinson <dominic@dcrdev.com> - 0.7.4-101
+* Tue Dec 28 2021 Dominic Robinson <dominic@dcrdev.com> 0.7.4-0.3.20211012git509d3b2
+- New package built with tito
 - Re-worked for later versions with VP9 support
 * Sat Oct 13 2018 Akarshan Biswas <akarshan.biswas@hotmail.com> - 0.7.4-101
 - Initial build
